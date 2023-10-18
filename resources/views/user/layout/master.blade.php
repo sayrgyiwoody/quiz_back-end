@@ -53,6 +53,7 @@
           <span class="me-auto fw-bold" style="color:#3e79d5;">QUIZ PLUS</span>
           @if (!Auth::user())
             <button @click="toggleDarkMode" class="btn rounded-circle border border-2 fs-5" :class="{'btn-outline-light':darkModeStatus,'text-dark ':!darkModeStatus}"><i :class="{'bi bi-moon-stars-fill ':darkModeStatus,'bi bi-sun-fill':!darkModeStatus}"></i></button>
+            <a href="{{route('login')}}" class="btn btn-primary ms-3 px-3 py-2">Login</a>
           @endif
           @yield('previewDiv')
 
